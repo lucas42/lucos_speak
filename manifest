@@ -1,0 +1,14 @@
+CACHE MANIFEST
+#VERSION 1
+NETWORK:
+/resources
+http://auth.l42.eu/whoami
+CACHE:
+/
+/favicon.ico
+#/icon
+/config.json
+/voice/en.json
+http://l42.eu/logo.png
+http://l42.eu/cog.png
+FALLBACK:
