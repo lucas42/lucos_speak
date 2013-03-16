@@ -1,0 +1,8 @@
+body,html{
+  height:100%;
+  margin: 0;
+  padding: 0;
+}
+.speakButton { backrgound: #ccc; margin: 0; height: 100%; width: 100%;  color: #ccc; font-weight: bold; border-radius: 2em; }
+.speakButton.speechon { background: #090; }
+.speakButton:not(.speechon) { background: #900; }

@@ -11,7 +11,7 @@ resources.add('mespeak', 'js', 'mespeak/mespeak.js');
 //resources.add('voice_en', 'json', 'mespeak/voices/en/en.json');
 resources.add('load', 'js', 'js/load.js');
 //resources.add('video', 'js', 'video.js');
-//resources.add('css', 'css', 'style.css');
+resources.add('css', 'css', 'style.css');
 
 http.ServerResponse.prototype.sendError = function sendError(code, message, headers) {
 	if (!headers) headers = {};
