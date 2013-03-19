@@ -1,3 +1,4 @@
+var lucos = require("_lucos");
 lucos.disableNavBar();
 lucos.waitFor('ready', function () {
 			  
