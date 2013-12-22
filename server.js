@@ -1,7 +1,6 @@
 var fs = require('fs')
    url = require('url'),
    querystring = require('querystring'),
-   sys = require('sys'),
    http = require('http'),
    resources = require('../core/resources.js');
 
@@ -101,4 +100,4 @@ http.createServer(function _handleRequest(req, res) {
 	}
 		
 }).listen(8014);
-sys.puts('Server running at http://127.0.0.1:8014/');
+console.log('Server running at http://127.0.0.1:8014/');
