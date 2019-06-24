@@ -95,6 +95,15 @@ http.createServer(function _handleRequest(req, res) {
 
 			}
 			break;
+		case "/_info":
+			const output = {
+				system: 'lucos_speak',
+				checks: {},
+				metrics: {},
+			};
+			res.writeHead(200, {'Content-Type': 'application/json' });
+			res.write(JSON.stringify(output));
+			res.end();
 		default:
 			res.sendError(404, 'File Not Found');
 	}
