@@ -1,8 +1,0 @@
-{
-	"port": 8014,
-	"name": "Speak",
-	"commands": {
-		"main": 'nodejs server.js'
-	},
-	"subdomain": "speak"
-}
