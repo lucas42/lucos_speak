@@ -82,19 +82,6 @@ http.createServer(function _handleRequest(req, res) {
 						.replace("$manifest$", "/time.manifest");
 				});
 			break;
-		case "/standardtime":
-			var hour = parseInt(params.hour);
-			var min = parseInt(params.min);
-			if (isNaN(hour) || hour < 0 || hour >= 24 || isNaN(min) || min < 0 || min >= 60 || min % 10) {
-				res.sendError(404, 'File Not Found');
-			} else {
-				if (hour < 10) hour = '0' + hour;
-				if (min < 10) min = '0' + min;
-                                res.writeHead(302, {'Location': "http://staticmedia.l42.eu/time/big_"+hour+"-"+min+".mp4"});
-                                res.end();
-
-			}
-			break;
 		case "/_info":
 			const output = {
 				system: 'lucos_speak',
@@ -104,6 +91,7 @@ http.createServer(function _handleRequest(req, res) {
 			res.writeHead(200, {'Content-Type': 'application/json' });
 			res.write(JSON.stringify(output));
 			res.end();
+			break;
 		default:
 			res.sendError(404, 'File Not Found');
 	}
