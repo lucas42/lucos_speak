@@ -1,0 +1,8 @@
+version: '3'
+services:
+    speak:
+      build: .
+      container_name: speak
+      ports: 
+        - "8014:8014"
+      image: lucas42/lucos_speak
