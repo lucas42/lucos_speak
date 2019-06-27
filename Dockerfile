@@ -1,6 +1,6 @@
 FROM node:8-alpine
 
-WORKDIR /web/lucos/time
+WORKDIR /web/lucos/speak
 
 # Legacy method of installing resources was using the lucos_core library - installed in a relative location on the file system
 RUN apk add git
@@ -11,4 +11,4 @@ COPY . .
 ENV NODE_ENV production
 EXPOSE 8014
 
-CMD [ "node", "server.js"]
+CMD [ "node", "server.js" ]
