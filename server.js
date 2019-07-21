@@ -87,6 +87,9 @@ http.createServer(function _handleRequest(req, res) {
 				system: 'lucos_speak',
 				checks: {},
 				metrics: {},
+				ci: {
+					circle: "gh/lucas42/lucos_speak",
+				},
 			};
 			res.writeHead(200, {'Content-Type': 'application/json' });
 			res.write(JSON.stringify(output));
